@@ -1,0 +1,108 @@
+// position absolute
+@mixin before-after($width, $height) {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+    @content;
+}
+
+// landing mixin
+@mixin landing{
+    animation: linear-animation ease-in-out alternate infinite;
+    min-height: 100vh;
+    @include linearGradient;
+    @content;
+}
+
+@mixin main-heading {
+    width: fit-content;
+    font-size: 25px;
+    @content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// animations
+@mixin linearGradient {
+    @keyframes linear-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+@mixin fly-animation {
+    @keyframes paper-flight {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+
+        40% {
+            transform: translateX(1px) translateY(4px);
+        }
+
+        70% {
+            transform: translateX(4px) translateY(2px);
+        }
+
+        100% {
+            transform: translateX(6px) translateY(4px);
+        }
+    }
+}
+
+@mixin up-down-animation {
+    @keyframes up-down {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+    }
+}
+
+@mixin down-and-hide-animation {
+    @keyframes down-and-hide {
+        100% {
+            top: 100%;
+        }
+    }
+}
+
+
+
+@mixin pluse-animation{
+    @keyframes pulse {
+        from{
+            transform: scale(0.9);
+        }
+        to{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@mixin right-left-animation{
+    @keyframes right-left {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-4px);
+        }
+    }
+}
