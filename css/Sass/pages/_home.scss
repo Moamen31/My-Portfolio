@@ -184,6 +184,7 @@
         background-image: url('../imgs/abstract-element.jpg');
         background-position: center center;
         background-attachment: fixed;
+        background-repeat: no-repeat;
 
         .heading {
             color: $whiteColor;
@@ -279,6 +280,7 @@
                 padding: 20px;
                 border-radius: $borderRadius;
                 height: 50%;
+                overflow: hidden;
 
                 .title {
                     img {
