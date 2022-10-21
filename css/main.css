@@ -544,7 +544,7 @@ footer .container p:nth-child(2):hover svg {
 }
 @media (max-width: 767px) {
   .home-page .projects .project {
-    height: auto;
+    height: 190px;
   }
 }
 .home-page .projects .project:hover {
