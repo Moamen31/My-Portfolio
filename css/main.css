@@ -539,10 +539,11 @@ footer .container p:nth-child(2):hover svg {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
+  height: 190px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .home-page .projects .project {
     height: 100%;
   }
