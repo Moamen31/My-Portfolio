@@ -31,7 +31,7 @@ showMoreBtn.addEventListener("click", () => {
         for(let i = 0; i < imgArray.length; i++){
             let col =
         `
-        <div class="col-lg-4 g-4">
+        <div class="col-lg-4 col-md-6 g-4">
             <div class="project position-relative">
                 <img class="img-fluid" src=${imgArray[i]} alt="">
                 <div class="icons position-absolute">
