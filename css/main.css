@@ -554,6 +554,7 @@ footer .container p:nth-child(2):hover svg {
 }
 .home-page .projects .project img {
   height: 100%;
+  width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
