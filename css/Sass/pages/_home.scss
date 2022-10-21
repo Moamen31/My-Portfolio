@@ -361,7 +361,7 @@
             overflow: hidden;
             transition: $transition;
             @media (max-width:767px) {
-                     height: auto;
+                     height: 50%;
                  }
             &:hover {
                 transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg) scale(1, 1);
