@@ -324,7 +324,7 @@
 
     .projects {
         background-color: $darkerPurpleColor;
-
+        overflow: hidden;
         .heading {
             h1 {
                 color: $whiteColor;
@@ -355,12 +355,11 @@
 
         .project {
             background-color: white;
-            height: 100%;
             border-radius: 15px;
             overflow: hidden;
             transition: $transition;
-            @media (max-width:767px) {
-                height: 190px;
+            @media (min-width:768px) {
+                height: 100%;
             }
             &:hover {
                 transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg) scale(1, 1);
