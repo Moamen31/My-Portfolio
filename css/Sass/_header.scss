@@ -1,0 +1,48 @@
+header {
+    nav {
+        background-color: rgba(129, 46, 148, 0.178);
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 2%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        font-family: 'Inter', sans-serif;
+        .logo {
+            color: $lightGreyColor;
+            font-size: 23px;
+            font-weight: 500;
+            letter-spacing: 0.5;
+        }
+
+        .nav-list {
+            width: 85%;
+            .nav-item {
+                .nav-link {
+                    color: $lightGreyColor;
+                    transition: $transition;
+                    font-size: 17px;
+                    &:hover {
+                        color: $darkerGreyColor;
+                    }
+                }
+            }
+        }
+
+        .action-btn {
+            color: $lightGreyColor;
+            border: none;
+            font-size: 17px;
+            background-color: transparent;
+            transition: $transition;
+            &:hover{
+                color: $lightGreyColor;
+            }
+            &:hover svg {
+                animation: paper-flight 1s linear alternate infinite;
+            }
+            svg{
+                font-size: 17px;
+            }
+        }
+    }
+}
+@include fly-animation
