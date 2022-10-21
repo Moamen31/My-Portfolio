@@ -357,11 +357,11 @@
             background-color: white;
             border-radius: 15px;
             overflow: hidden;
-            height: 190px;
+//             height: 190px;
             transition: $transition;
-            @media (min-width:768px) {
-                height: 100%;
-            }
+//             @media (min-width:768px) {
+//                 height: 100%;
+//             }
             &:hover {
                 transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg) scale(1, 1);
             }
