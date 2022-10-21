@@ -508,6 +508,7 @@ footer .container p:nth-child(2):hover svg {
 }
 .home-page .projects {
   background-color: #03001e;
+  overflow: hidden;
 }
 .home-page .projects .heading h1 {
   color: #fff;
@@ -536,15 +537,14 @@ footer .container p:nth-child(2):hover svg {
 }
 .home-page .projects .project {
   background-color: white;
-  height: 100%;
   border-radius: 15px;
   overflow: hidden;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .home-page .projects .project {
-    height: 190px;
+    height: 100%;
   }
 }
 .home-page .projects .project:hover {
