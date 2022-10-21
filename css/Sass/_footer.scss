@@ -1,0 +1,22 @@
+footer {
+    background-color: $darkerPurpleColor;
+
+    .container {
+        p {
+            color: $whiteColor;
+            font-size: 18px;
+        }
+
+        p:nth-child(2) {
+            svg {
+                color: $redColor;
+                @include pluse-animation;
+            }
+
+            &:hover svg {
+                animation: pulse 0.6s infinite linear alternate;
+            }
+
+        }
+    }
+}
